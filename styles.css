@@ -1,0 +1,362 @@
+:root {
+    /* Colors */
+
+    /* lente*/
+
+    /* zomer */
+    --licht-blauw: #BCD9F5; /* lichtblauw lucht */
+    --blauw: #5291EE; /* Blauwe lucht */
+    --donker-blauw: #2E71E4; /* Donkerblauwe lucht */
+    --schaduw-lucht: #F4F5F7; /* Schaduw lucht */
+    --licht-groen: #96B638; /* lichtgroen gras */
+    --groen: #5F7E2A; /* gras */
+    --donker-groen: #425B33; /* donker groen gras */
+
+    --grond-gradient-zomer: linear-gradient(180deg, var(--licht-groen) 0%, var(--groen) 50% , var(--donker-groen) 100%);
+    --grond-gradient-zomer2: linear-gradient(180deg, var(--licht-groen) 0%, var(--groen) 75% , var(--donker-groen) 100%);
+    --lucht-gradient-zomer: linear-gradient(180deg, var(--donker-blauw) 0%, var(--blauw) 50%, var(--licht-blauw) 100%);
+
+    /* herfst */
+
+
+    /* winter */
+
+
+    /*boom*/ 
+    --boom-stam-highlight: #916541; /* boom stam highlight */
+    --boom-stam: #5B392C; /* boomstam */
+    --boom-blad-highlight: #8FBA24; /* boom blad highlight */
+    --boom-blad: #69A84D ; /* boomblad */
+    --boom-schaduw: #326E52; /* boom schaduw */
+
+    --boom-stam-gradient: linear-gradient(to right, var(--boom-stam) 60%, var(--boom-stam-highlight) 100%);
+    --boom-bladeren: radial-gradient (var(--boom-blad-highlight) 20%, var(--boom-blad) 60%, var(--boom-schaduw) 100%);
+
+}
+
+
+body {
+	margin:0;
+	height:100dvh;
+	
+	display:grid;
+	place-items:center;
+}
+
+
+.zomerGras {
+    background-color: var(--groen);
+    background-image: var(--grond-gradient-zomer);
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    clip-path: polygon(0 1%, 0% 100%, 100% 100%);
+
+}
+
+.zomerGras2 {
+    background-color: var(--groen);
+    background-image: var(--grond-gradient-zomer2);
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+    clip-path: polygon(100% 8%, 0% 100%, 100% 100%);
+}
+
+.zomerLucht {
+    background-color: var(--blauw);
+    background-image: var(--lucht-gradient-zomer);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* code voor de wolken https://css-shape.com/cloud/ */
+.wolken {
+    height: 125px; /* control the size */
+    aspect-ratio: 1.8;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: var(--schaduw-lucht);
+    left: 100px;
+    top: 100px;
+    position: absolute;
+}
+/* 
+.boomstam {
+    background-color: var(--boom-stam);
+    background-image: linear-gradient(to right, var(--boom-stam) 60%, var(--boom-stam-highlight) 100%);
+    height: 100%;
+    width: 100px;
+
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+
+.tree-container {
+    height: 75%;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+}
+
+
+.leaves {
+    position: absolute;
+    bottom: 80px;
+    width: 140px;
+    height: 140px;
+    background: 
+    radial-gradient(
+    circle at 40% 30%, 
+    var(--boom-blad-highlight) 20%, 
+    var(--boom-blad) 60%, 
+    var(--boom-schaduw) 100%
+    );
+    border-radius: 50%;
+}
+
+.leaf1 {left: -0px;     top: 20px;}
+.leaf2 {left:-60px;    top: -20px;}
+.leaf3 {left:-20px;    top: -35px;}
+.leaf4 {left: 20px;    top: 60px;}
+.leaf5 {left: 20px;    top: 20px;}
+.leaf6 {left:-50px;    top: 70px;} */
+
+
+
+/* li {
+    height: 70%;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+	--size-boom: 2em;
+	
+	display:grid;
+	justify-content:center;
+	
+	width:var(--size-boom);
+	aspect-ratio:1/6;
+	
+	
+	
+	
+}
+
+li:before {
+	content:"";
+	position:absolute;
+	inset:0;
+	
+	background-color:brown;
+    background-image: linear-gradient(to right, var(--boom-stam) 60%, var(--boom-stam-highlight) 100%);	
+	
+	clip-path:polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+
+
+cirkel {
+	display:block;
+	
+	--size-cirkel:3;
+	
+	--x-cirkel:0;
+	--y-cirkel:0;
+	
+	grid-area:1/1;
+	
+	width:calc( var(--size-boom) * var(--size-cirkel) );
+	aspect-ratio:1;
+	
+	background-color:var(--boom-blad);
+    background-image:    radial-gradient(
+        circle at 40% 30%, 
+        var(--boom-blad-highlight) 20%, 
+        var(--boom-blad) 60%, 
+        var(--boom-schaduw) 100%
+        );  
+	
+	border-radius:50%;
+	
+	translate:
+		calc(var(--size-boom) * var(--x-cirkel) )
+		calc(var(--size-boom) * var(--y-cirkel) )
+}
+
+cirkel:nth-of-type(1) { 
+	--size-cirkel:3; 
+	--x-cirkel:1;
+	--y-cirkel:2.5;
+}
+
+cirkel:nth-of-type(2) { 
+	--size-cirkel:2;
+	--x-cirkel:3;
+	--y-cirkel:3;
+}
+
+cirkel:nth-of-type(3) { 
+    --size-cirkel:3; 
+	--x-cirkel:3;
+	--y-cirkel:3;
+}
+
+cirkel:nth-of-type(4) { 
+    --size-cirkel:1;
+	--x-cirkel:3;
+	--y-cirkel:3; 
+}
+
+cirkel:nth-of-type(5) { 
+    --size-cirkel:1; 
+    --x-cirkel:3;
+	--y-cirkel:3;
+}
+
+cirkel:nth-of-type(6) { 
+    --size-cirkel:2; 
+	--x-cirkel:3;
+	--y-cirkel:3;
+}
+
+cirkel:nth-of-type(7)
+ { 
+    --size-cirkel:3; 
+	--x-cirkel:3;
+	--y-cirkel:3;
+}
+
+cirkel:nth-of-type(8) { 
+    --size-cirkel:1; 
+	--x-cirkel:3;
+	--y-cirkel:3;
+} */
+
+
+
+
+li {
+	position:relative;
+    height: 60%;
+    left: 25%;
+	--size-boom: clamp(6em, 20vw, 8em);
+	
+	display:grid;
+	justify-content:center;
+	
+	width:var(--size-boom);
+	aspect-ratio:1/6;
+	
+	
+	
+	
+}
+
+li:before {
+	content:"";
+	position:absolute;
+	inset:0;
+	
+	background-color:brown;
+    background-image: var(--boom-stam-gradient);	
+	/*  figuurtje gemaal met https://bennettfeely.com/clippy/  */
+	clip-path:polygon(20% 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+cirkel {
+	display:block;
+	
+	--size-cirkel:3;
+	
+	--x-cirkel:0;
+	--y-cirkel:0;
+	
+	grid-area:1/1;
+	
+	width:calc( var(--size-boom) * var(--size-cirkel) );
+	aspect-ratio:1;
+	
+	background-color:green;
+    background-image: 
+    radial-gradient(
+        circle at 40% 30%, 
+        var(--boom-blad-highlight) 20%, 
+        var(--boom-blad) 60%, 
+        var(--boom-schaduw) 100%
+        );
+	
+	border-radius:50%;
+	
+	translate:
+		calc(var(--size-boom) * var(--x-cirkel) )
+		calc(var(--size-boom) * var(--y-cirkel) )
+}
+
+cirkel:nth-of-type(1) { 
+    --size-cirkel:1.75; 
+	--x-cirkel:.2;
+	--y-cirkel:-1;
+}
+cirkel:nth-of-type(2) { 
+    --size-cirkel:1; 
+	--x-cirkel:.6;
+	--y-cirkel:.15;
+
+}
+cirkel:nth-of-type(3)  { 
+    --size-cirkel:1; 
+	--x-cirkel: -.1;
+	--y-cirkel: .25;
+
+}
+cirkel:nth-of-type(4)  { 
+
+    --size-cirkel:1.5; 
+	--x-cirkel:0.1;
+	--y-cirkel:-.6;
+
+}
+cirkel:nth-of-type(5)  { 
+
+
+    --size-cirkel:1.3; 
+	--x-cirkel:-.2;
+	--y-cirkel:-1;
+}
+cirkel:nth-of-type(6)  { 
+	--size-cirkel:1.75; 
+	--x-cirkel:.8;
+	--y-cirkel:-.7;
+}
+cirkel:nth-of-type(7)  { 
+	--size-cirkel:1.25; 
+	--x-cirkel:-.8;
+	--y-cirkel:-.2;
+
+
+
+}
+
+
+
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
