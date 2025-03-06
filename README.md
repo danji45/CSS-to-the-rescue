@@ -24,4 +24,6 @@ Ik heb ook een responsive layout gemaakt, hier is sowiso de zon zichtbaar, de zo
 De docent zei dat het misschien te weinig was, daarom heb ik nog wat extra ideeen bedacht die je aan en uit kan zetten doormiddel van een knop. Deze ideeen zijn vogels en een dark mode die het nacht maakt.
 <br><br>
 <h2>week 2</h2>
-In de tweede week ben ik begonnen met het programmeren, ik wou dat er eerst een standaard layout was. Ik begon met het maken van de kleurcodes voor de zomer, dit omdat 
+In de tweede week ben ik begonnen met het programmeren, ik wou dat er eerst een standaard layout was. Ik begon met het maken van de kleurcodes voor de zomer, dit omdat hier alle elementen inzitten die in andere seizoenen ook zitten. Ik had eerst de grond gemaakt, en daarna de lucht. Ik had eerst de grond vlak gemaakt, maar vond dat een beetje saai, dus heb er toen 2 verschillende driehoeken van gemaakt.
+<br>
+Om er voor te zorgen dat je ook echt zag dat het 2 verschillende driehoeken zijn heb ik er eentje wat groter gemaakt. Na de grond en lucht ben ik begonnen aan de boom, hier had ik best wat moeite mee, omdat ik niet helemaal wist hoe ik dit moest doen zonder classes te gebruiken. Dit heb ik daarom ook aan Sanne gevraagd, en die heeft me er mee geholpen. Ben uiteindelijk heel blij met het eind resultaat.
