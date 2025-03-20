@@ -1,0 +1,125 @@
+/* code voor de wolken https://css-shape.com/cloud/ */
+
+:root{
+    --wolk-kleur:  radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    --wolk-mask: var(--wolk-kleur) 100% 100%/30% 60%, var(--wolk-kleur) 70% 0/50% 100%, var(--wolk-kleur) 0 100%/36% 68%, var(--wolk-kleur) 27% 18%/26% 40%, linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+
+}
+
+/* animatie voor de wolken */
+
+@keyframes moveCloud {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(150vw);
+    }
+}
+
+
+
+/* ######################## */
+/*         wolk 1           */
+/* ######################## */
+
+body >main > div:nth-of-type(2) {
+    height: 6em;
+    aspect-ratio: 1.8;
+    mask: var(--wolk-mask);
+    background: var(--schaduw-lucht);
+    left: -5%;
+    top: 2%;
+    position: absolute;
+    opacity: 0.6;
+
+    /* Animatie */
+    animation: moveCloud 40s linear infinite;
+    animation-delay: -10s;
+    z-index: 3;
+}
+
+/* ######################## */
+/*         wolk 2           */
+/* ######################## */
+
+
+body > main > div:nth-of-type(3) {
+    height: 2em;
+    aspect-ratio: 1.8;
+    mask: var(--wolk-mask);
+    background: var(--schaduw-lucht);
+    left: -5%;
+    top: 40%;
+    position: absolute;
+    opacity: 0.7;
+
+    /* Animatie */
+    animation: moveCloud 30s linear infinite;
+    animation-delay: -10s;
+    z-index: 3;
+}
+
+/* ######################## */
+/*         wolk 3           */
+/* ######################## */
+
+body > main > div:nth-of-type(4) {
+    height: 4em;
+    aspect-ratio: 1.8;
+    mask: var(--wolk-mask);
+    background: var(--schaduw-lucht);
+    left: -5%;
+    top: 20%;
+    position: absolute;
+    opacity: 0.5;
+
+    /* Animatie */
+    animation: moveCloud 26s linear infinite;
+    animation-delay: -2s;
+    z-index: 3;
+}
+
+
+/* ######################## */
+/*         wolk 4           */
+/* ######################## */
+
+
+body > main > div:nth-of-type(5) {
+    height: 7em;
+    aspect-ratio: 1.8;
+    mask: var(--wolk-mask);
+    background: var(--schaduw-lucht);
+    left: -5%;
+    top: 28%;
+    position: absolute;
+    opacity: 0.8;
+
+    /* Animatie */
+    animation: moveCloud 25s linear infinite;
+    animation-delay: -20s;
+    z-index: 3;
+}
+
+
+/* ######################## */
+/*         wolk 5           */
+/* ######################## */
+
+body > main > div:nth-of-type(6) {
+    height: 8em;
+    aspect-ratio: 1.8;
+    mask: var(--wolk-mask);
+    background: var(--schaduw-lucht);
+    left: -5%;
+    top: 18%;
+    position: absolute;
+    opacity: 0.8;
+
+    /* Animatie */
+    animation: moveCloud 40s linear infinite;
+    animation-delay: -25s;
+    z-index: 3; 
+}
+

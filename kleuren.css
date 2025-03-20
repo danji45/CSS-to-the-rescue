@@ -1,0 +1,124 @@
+:root {
+    /* ############ */
+    /*    Lente     */
+    /* ############ */
+    --licht-lucht-lente: #7D7DAF; /* licht kleur lucht */
+    --lucht-lente: #CBB3C9 ; /* meduim kleur lucht */
+    --donker-lucht-lente: #AC726B ; /* Donker kleur lucht */
+    --schaduw-lucht-lente: #F4F5F7; /* Schaduw lucht */
+    --licht-gras-lente: #B5D6A7; /* licht gras */
+    --gras-lente:#7E9E5D; /* gras */
+    --donker-gras-lente: #4F6D3A; /* donker gras */
+
+    --boom-stam-highlight-lente: #96755a; /* boom stam highlight */
+    --boom-stam-lente: #724d3f; /* boomstam */
+    --boom-blad-highlight-lente: #FF99A0; /* boom blad highlight */
+    --boom-blad-lente: #FF7982 ; /* boomblad */
+    --boom-schaduw-lente: #FF5964; /* boom schaduw */
+
+    --licht-banner-lente: #F09; /* licht kleur banner */
+    --donker-banner-lente: #C06; /* donker kleur banner */
+    --lichte-tekst-lente: #fff; /* lichte tekst */
+    --donkere-tekst-lente: #cab; /* donkere tekst */
+
+    --boom-stam-gradient-lente: linear-gradient(to right, var(--boom-stam-lente) 60%, var(--boom-stam-highlight-lente) 100%);
+    --boom-bladeren-lente: radial-gradient(circle at 40% 30%, var(--boom-blad-highlight-lente) 20%, var(--boom-blad-lente) 60%, var(--boom-schaduw-lente) 100%);
+
+
+    --grond-gradient-lente:linear-gradient(180deg, var(--licht-gras-lente)0%, var(--gras-lente)50%, var(--donker-gras-lente)100%);
+    --grond-gradient-lente2: linear-gradient(180deg,  var(--licht-gras-lente)0%, var(--gras-lente)75%, var(--donker-gras-lente)100%);
+    --lucht-gradient-lente: linear-gradient(180deg, var(--donker-lucht-lente) 0%, var(--lucht-lente) 50%, var(--licht-lucht-lente) 100%);
+
+
+    /* ############ */
+    /*    herfst    */
+    /* ############ */
+    --licht-lucht-herfst: #DEAA61; /* licht kleur lucht */
+    --lucht-herfst: #7992A6 ; /* meduim kleur lucht */
+    --donker-lucht-herfst: #2B6E9B ; /* Donker kleur lucht */
+    --schaduw-lucht-herfst: #F4F5F7; /* Schaduw lucht */
+    --licht-gras-herfst: #B39F05; /* licht gras */
+    --gras-herfst:#B2881F; /* gras */
+    --donker-gras-herfst: #A36539 ; /* donker gras */
+
+
+    --grond-gradient-herfst:linear-gradient(180deg, var(--licht-gras-herfst)0%, var(--gras-herfst)50%, var(--donker-gras-herfst)100%);
+    --grond-gradient-herfst2: linear-gradient(180deg,  var(--licht-gras-herfst)0%, var(--gras-herfst)75%, var(--donker-gras-herfst)100%);
+    --lucht-gradient-herfst: linear-gradient(180deg, var(--donker-lucht-herfst) 0%, var(--lucht-herfst) 50%, var(--licht-lucht-herfst) 100%);
+
+    --licht-banner-herfst: rgb(255, 102, 0); /* licht kleur banner */
+    --donker-banner-herfst: rgb(210, 67, 5); /* donker kleur banner */
+    --lichte-tekst-herfst: #fff; /* lichte tekst */
+    --donkere-tekst-herfst: rgb(204, 181, 170); /* donkere tekst */
+
+    --boom-stam-highlight-herfst: #916541; /* boom stam highlight */
+    --boom-stam-herfst: #5B392C; /* boomstam */
+    --boom-blad-highlight-herfst: #E67E22; /* boom blad highlight */
+    --boom-blad-herfst: #C0392B ; /* boomblad */
+    --boom-schaduw-herfst: #922B21; /* boom schaduw */
+
+    --boom-stam-gradient-herfst: linear-gradient(to right, var(--boom-stam-herfst) 60%, var(--boom-stam-highligh-herfstt) 100%);
+    --boom-bladeren-herfst: radial-gradient(circle at 40% 30%,var(--boom-blad-highlight-herfst) 20%, var(--boom-blad-herfst) 60%, var(--boom-schaduw-herfst) 100%);
+
+    /* ############ */
+    /*    winter    */
+    /* ############ */
+    --licht-lucht-winter: #D6EAF8; /* licht kleur lucht */
+    --lucht-winter: #85C1E9; /* meduim kleur lucht */
+    --donker-lucht-winter: #3498DB; /* Donker kleur lucht */
+    --schaduw-lucht-winter: #F4F5F7; /* Schaduw lucht */
+    --licht-gras-winter: #ffffff; /* licht gras */
+    --gras-winter: #d0d4d0; /* gras */
+    --donker-gras-winter: #8d968e; /* donker gras */
+
+    --grond-gradient-winter: linear-gradient(180deg, var(--licht-gras-winter) 0%, var(--gras-winter) 50% , var(--donker-gras-winter) 100%);
+    --grond-gradient-winter2: linear-gradient(180deg, var(--licht-gras-winter) 0%, var(--gras-winter) 75% , var(--donker-gras-winter) 100%);
+    --lucht-gradient-winter: linear-gradient(180deg, var(--donker-lucht-winter) 0%, var(--lucht-winter) 50%, var(--licht-lucht-winter) 100%);
+
+    
+    --licht-banner-winter: rgb(212, 0, 255); /* licht kleur banner */
+    --donker-banner-winter: rgb(159, 1, 202); /* donker kleur banner */
+    --lichte-tekst-winter: #fff; /* lichte tekst */
+    --donkere-tekst-winter: rgb(197, 170, 204); /* donkere tekst */
+
+    --boom-stam-highlight-winter: #916541; /* boom stam highlight */
+    --boom-stam-winter: #5B392C; /* boomstam */
+    --boom-blad-highlight-winter: #bdc7c0; /* boom blad highlight */
+    --boom-blad-winter: #acc4b9 ; /* boomblad */
+    --boom-schaduw-winter: #5d7b63; /* boom schaduw */
+
+    --boom-stam-gradient-winter: linear-gradient(to right, var(--boom-stam-winter) 60%, var(--boom-stam-highligh-winter) 100%);
+    --boom-bladeren-winter: radial-gradient(circle at 40% 30%,var(--boom-blad-highlight-winter) 20%, var(--boom-blad-winter) 60%, var(--boom-schaduw-winter) 100%);
+
+
+    /* ############ */
+    /*   kleuren    */
+    /* ############ */  
+    --licht-lucht: #BCD9F5; /* licht kleur lucht */
+    --lucht: #5291EE; /* meduim kleur lucht */
+    --donker-lucht: #2E71E4; /* Donker kleur lucht */
+    --schaduw-lucht: #F4F5F7; /* Schaduw lucht */
+    --licht-gras: #96B638; /* licht gras */
+    --gras: #5F7E2A; /* gras */
+    --donker-gras: #425B33; /* donker gras */
+
+    --licht-banner: rgb(234, 255, 0); /* licht kleur banner */
+    --donker-banner: rgb(187, 204, 0); /* donker kleur banner */
+    --lichte-tekst: #fff; /* lichte tekst */
+    --donkere-tekst: rgb(204, 198, 170); /* donkere tekst */
+
+    --grond-gradient-zomer: linear-gradient(180deg, var(--licht-gras) 0%, var(--gras) 50% , var(--donker-gras) 100%);
+    --grond-gradient-zomer2: linear-gradient(180deg, var(--licht-gras) 0%, var(--gras) 75% , var(--donker-gras) 100%);
+    --lucht-gradient-zomer: linear-gradient(180deg, var(--donker-lucht) 0%, var(--lucht) 50%, var(--licht-lucht) 100%);
+
+    /*boom*/ 
+    --boom-stam-highlight: #916541; /* boom stam highlight */
+    --boom-stam: #5B392C; /* boomstam */
+    --boom-blad-highlight: #8FBA24; /* boom blad highlight */
+    --boom-blad: #69A84D ; /* boomblad */
+    --boom-schaduw: #326E52; /* boom schaduw */
+
+    --boom-stam-gradient: linear-gradient(to right, var(--boom-stam) 60%, var(--boom-stam-highlight) 100%);
+    --boom-bladeren: radial-gradient(circle at 40% 30%, var(--boom-blad-highlight) 20%, var(--boom-blad) 60%, var(--boom-schaduw) 100%);
+
+}

@@ -1,0 +1,151 @@
+/* ######################## */
+/* veranderen van seizoenen */
+/* ######################## */
+
+ /* Seasons control panel */
+ body> div:nth-of-type(1) {
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(179 230 224 / 13%);
+    padding: 1dvh 2dvh;
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    gap: 2dvh;
+
+}
+
+body> div:nth-last-of-type(1) > label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* ---------- */
+/*    lente   */
+/* ---------- */
+html:has(#lente:checked) main {
+    --lucht-gradient-zomer: var(--lucht-gradient-lente);
+}
+
+html:has(#lente:checked) li {
+    --boom-stam-gradient: var(--boom-stam-gradient-lente);
+}
+
+html:has(#lente:checked) p {
+    --grond-gradient-zomer: var(--grond-gradient-lente);
+    --grond-gradient-zomer2: var(--grond-gradient-lente2);
+}
+
+html:has(#lente:checked) li cirkel {
+    background-image: var(--boom-bladeren-lente);
+}
+
+html:has(#lente:checked) {
+    --licht-banner: var(--licht-banner-lente);
+    --donker-banner: var(--donker-banner-lente);
+    --licht-tekst: var(--licht-tekst-lente);
+    --donker-tekst: var(--donker-tekst-lente);
+}
+
+
+
+/* zomer staat er niet tussen, want dat is standaard. 
+De knop "zomer" doet in zoverre ook niets, alleen er voor zorgen dat de andere knoppen niet getoggeld zijn. */
+
+/* ---------- */
+/*   herfst   */
+/* ---------- */
+html:has(#herfst:checked) main {
+    --lucht-gradient-zomer: var(--lucht-gradient-herfst);
+}
+
+html:has(#herfst:checked) p {
+    --grond-gradient-zomer: var(--grond-gradient-herfst);
+    --grond-gradient-zomer2: var(--grond-gradient-herfst2);
+}
+
+html:has(#herfst:checked) li cirkel {
+    background-image: var(--boom-bladeren-herfst);
+}
+
+html:has(#herfst:checked) {
+    --licht-banner: var(--licht-banner-herfst);
+    --donker-banner: var(--donker-banner-herfst);
+    --licht-tekst: var(--licht-tekst-herfst);
+    --donker-tekst: var(--donker-tekst-herfst);
+}
+
+/* winter */
+html:has(#winter:checked) main {
+    --lucht-gradient-zomer: var(--lucht-gradient-winter);
+}
+
+html:has(#winter:checked) p {
+    --grond-gradient-zomer: var(--grond-gradient-winter);
+    --grond-gradient-zomer2: var(--grond-gradient-winter2);
+}
+
+html:has(#winter:checked) li cirkel {
+    background-image: var(--boom-bladeren-winter);
+}
+
+html:has(#winter:checked) li cirkel:nth-of-type(7),
+html:has(#winter:checked) li cirkel:nth-of-type(6),
+html:has(#winter:checked) li cirkel:nth-of-type(4),
+html:has(#winter:checked) li cirkel:nth-of-type(2) {
+    display: none;
+}
+
+html:has(#winter:checked) li cirkel:nth-of-type(3){
+    --size-cirkel: 1.5;
+    --x-cirkel: 0.2;
+    --y-cirkel: -.8;
+}
+
+html:has(#winter:checked) li cirkel:nth-of-type(5){
+    --size-cirkel: 1.2;
+    --x-cirkel: -0.3;
+    --y-cirkel: -.5;
+}
+
+html:has(#winter:checked) li cirkel:nth-of-type(1){
+    --size-cirkel: 0.8;
+    --x-cirkel: 0.3;
+    --y-cirkel: .2;
+}
+
+html:has(#winter:checked) li{
+height: 55%;
+}
+
+
+html:has(#winter:checked) body> div >div:nth-of-type(2){
+    background-color: transparent;
+    background-image: radial-gradient(
+    circle at 25% 25% in oklch,
+        rgb(195, 195, 159) 25%,
+          rgb(237, 222, 136) 50%,
+        rgb(205, 163, 84) 66%,
+        transparent);
+    border-radius: 50%;
+    height: 22dvh;
+    width: 22dvh;
+    position: absolute;
+    top: 2%;
+    left: 82%;
+
+    overflow: hidden;
+    position: relative;
+
+}
+
+html:has(#winter:checked) {
+    --licht-banner: var(--licht-banner-winter);
+    --donker-banner: var(--donker-banner-winter);
+    --licht-tekst: var(--licht-tekst-winter);
+    --donker-tekst: var(--donker-tekst-winter);
+}
